@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>C# 初級後端工程師 - 綜合技能樹</title>
+    <title>個人綜合技能樹</title>
     <style>
         * {
             margin: 0;
@@ -48,18 +48,23 @@
             opacity: 0.8;
         }
 
+        /* 統一所有技能區塊的間距 */
+        .security-section-wrapper {
+            margin-bottom: 50px;
+        }
+
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .other-skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-bottom: 30px;
+            margin-bottom: 50px;
         }
 
         .skill-section {
@@ -426,30 +431,128 @@
         .android-stat .stat-number {
             color: #27ae60;
         }
+
+        /* 可編輯區域樣式 */
+        .editable-section {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            border: 2px dashed rgba(0, 0, 0, 0.1);
+            margin-bottom: 50px;
+        }
+
+        .editable-title {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin-bottom: 25px;
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            color: white;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+        }
+
+        .editable-content {
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 10px;
+            min-height: 150px;
+            border: 1px dashed rgba(0, 0, 0, 0.2);
+            color: #666;
+            font-size: 0.95rem;
+            line-height: 1.6;
+        }
+
+        .placeholder-text {
+            color: #999;
+            font-style: italic;
+            text-align: center;
+            margin-top: 30px;
+        }
     </style>
 </head>
 
 <body>
     <div class="container">
         <div class="header">
-            <h1>💻 C# 初級後端工程師</h1>
-            <div class="subtitle">Junior Backend Developer - Multi-Skilled Professional</div>
-            <div class="description">Core C# • 6+ Years Security Expert • Technical Translation & Interpretation •
+            <h1>💻李嘉峰綜合技能樹</h1>
+            <div class="subtitle">Network Security Professional - Multi-Skilled Professional</div>
+            <div class="description">6+ Years Security Expert • Core C# • Technical Translation & Interpretation •
                 Python Data Analysis • Android Development</div>
         </div>
 
         <div class="highlight-box">
             <h4>🌟 專業技能組合 Professional Skill Mix</h4>
-            <p>1 年 C# 開發經驗 • 6+ 年資安專業 • 技術會議口譯 • Python 資料分析 • Android 應用開發</p>
+            <p> 6+ 年資安專業 • 技術會議口譯 • 1 年 C# 開發經驗 •Python 資料分析 • Android 應用開發</p>
             <div class="tech-stack">
-                <span class="tech-item">ASP.NET Core</span>
-                <span class="tech-item">Entity Framework & Dapper</span>
-                <span class="tech-item">RESTful API</span>
-                <span class="tech-item">MS SQL</span>
                 <span class="tech-item">資安滲透測試及漏洞評估</span>
                 <span class="tech-item">技術會議口譯</span>
+                <span class="tech-item">C# & .NET Core</span>
                 <span class="tech-item">Python + Pandas</span>
                 <span class="tech-item">Android Studio + Java</span>
+            </div>
+        </div>
+
+        <!-- 資安技能 -->
+        <div class="security-section-wrapper">
+            <div class="skill-section security-section">
+                <div class="skill-title security-title">
+                    🛡️ 資訊安全專業
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-title">🔒 滲透測試 & 評估</div>
+                    <div class="skill-items">
+                        <span class="skill-item core-skill">滲透測試<span class="proficiency-indicator expert"></span><span
+                                class="years-exp security-years">6+年</span></span>
+                        <span class="skill-item core-skill">漏洞評估<span class="proficiency-indicator expert"></span><span
+                                class="years-exp security-years">6+年</span></span>
+                        <span class="skill-item core-skill">OWASP Top 10<span
+                                class="proficiency-indicator expert"></span><span
+                                class="years-exp security-years">6+年</span></span>
+                        <span class="skill-item">Web 應用程式安全<span class="proficiency-indicator expert"></span></span>
+                        <span class="skill-item">網路安全評估<span class="proficiency-indicator advanced"></span></span>
+                        <span class="skill-item">社交工程評估<span class="proficiency-indicator advanced"></span></span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-title">🔍 安全工具 & 技術</div>
+                    <div class="skill-items">
+                        <span class="skill-item">Kali Linux<span class="proficiency-indicator expert"></span></span>
+                        <span class="skill-item">Burp Suite<span class="proficiency-indicator expert"></span></span>
+                        <span class="skill-item">Nmap<span class="proficiency-indicator expert"></span></span>
+                        <span class="skill-item">Metasploit<span class="proficiency-indicator advanced"></span></span>
+                        <span class="skill-item">Wireshark<span class="proficiency-indicator advanced"></span></span>
+                        <span class="skill-item">NESSUS<span class="proficiency-indicator advanced"></span></span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-title">📊 合規 & 報告</div>
+                    <div class="skill-items">
+                        <span class="skill-item">安全評估報告撰寫<span class="proficiency-indicator expert"></span></span>
+                        <span class="skill-item">ISO 27001 知識<span class="proficiency-indicator advanced"></span></span>
+                        <span class="skill-item">風險評估<span class="proficiency-indicator advanced"></span></span>
+                        <span class="skill-item">安全政策制定<span class="proficiency-indicator intermediate"></span></span>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="category-title">🎓 認證 & 持續學習</div>
+                    <div class="skill-items">
+                        <span class="skill-item">CEH 已取得<span class="proficiency-indicator intermediate"></span></span>
+                        <span class="skill-item">CISSP 準備中<span class="proficiency-indicator beginner"></span></span>
+                        <span class="skill-item">漏洞研究<span class="proficiency-indicator intermediate"></span></span>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -518,62 +621,6 @@
                 </div>
             </div>
 
-            <!-- 資安技能 -->
-            <div class="skill-section security-section">
-                <div class="skill-title security-title">
-                    🛡️ 資訊安全專業
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-title">🔒 滲透測試 & 評估</div>
-                    <div class="skill-items">
-                        <span class="skill-item core-skill">滲透測試<span class="proficiency-indicator expert"></span><span
-                                class="years-exp security-years">6+年</span></span>
-                        <span class="skill-item core-skill">漏洞評估<span class="proficiency-indicator expert"></span><span
-                                class="years-exp security-years">6+年</span></span>
-                        <span class="skill-item core-skill">OWASP Top 10<span
-                                class="proficiency-indicator expert"></span><span
-                                class="years-exp security-years">6+年</span></span>
-                        <span class="skill-item">Web 應用程式安全<span class="proficiency-indicator expert"></span></span>
-                        <span class="skill-item">網路安全評估<span class="proficiency-indicator advanced"></span></span>
-                        <span class="skill-item">社交工程評估<span class="proficiency-indicator advanced"></span></span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-title">🔍 安全工具 & 技術</div>
-                    <div class="skill-items">
-                        <span class="skill-item">Kali Linux<span class="proficiency-indicator expert"></span></span>
-                        <span class="skill-item">Burp Suite<span class="proficiency-indicator expert"></span></span>
-                        <span class="skill-item">Nmap<span class="proficiency-indicator expert"></span></span>
-                        <span class="skill-item">Metasploit<span class="proficiency-indicator advanced"></span></span>
-                        <span class="skill-item">Wireshark<span class="proficiency-indicator advanced"></span></span>
-                        <span class="skill-item">NESSUS<span class="proficiency-indicator advanced"></span></span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-title">📊 合規 & 報告</div>
-                    <div class="skill-items">
-                        <span class="skill-item">安全評估報告撰寫<span class="proficiency-indicator expert"></span></span>
-                        <span class="skill-item">ISO 27001 知識<span class="proficiency-indicator advanced"></span></span>
-                        <span class="skill-item">風險評估<span class="proficiency-indicator advanced"></span></span>
-                        <span class="skill-item">安全政策制定<span class="proficiency-indicator intermediate"></span></span>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <div class="category-title">🎓 認證 & 持續學習</div>
-                    <div class="skill-items">
-                        <span class="skill-item">CEH 已取得<span class="proficiency-indicator intermediate"></span></span>
-                        <span class="skill-item">CISSP 準備中<span class="proficiency-indicator beginner"></span></span>
-                        <span class="skill-item">漏洞研究<span class="proficiency-indicator intermediate"></span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="skills-grid">
             <!-- 技術翻譯技能 -->
             <div class="skill-section translation-section">
                 <div class="skill-title translation-title">
@@ -619,21 +666,6 @@
                                 class="proficiency-indicator advanced"></span></span>
                         <span class="skill-item">資安研討會<span class="proficiency-indicator advanced"></span></span>
                         <span class="skill-item">技術培訓課程<span class="proficiency-indicator intermediate"></span></span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 空白區域 - 可放置未來技能或保持平衡 -->
-            <div class="skill-section"
-                style="background: rgba(255, 255, 255, 0.5); display: flex; align-items: center; justify-content: center; min-height: 300px;">
-                <div style="text-align: center; color: #7f8c8d;">
-                    <h3>🚀 持續學習中</h3>
-                    <p>Next Skills Coming Soon...</p>
-                    <div style="margin-top: 20px; font-size: 0.9rem;">
-                        <div>• DevOps & CI/CD</div>
-                        <div>• Cloud Platforms (Azure/AWS)</div>
-                        <div>• Microservices Architecture</div>
-                        <div>• Machine Learning Basics</div>
                     </div>
                 </div>
             </div>
@@ -689,7 +721,7 @@
                 <div class="skill-category">
                     <div class="category-title">🎯 專案經驗</div>
                     <div class="skill-items">
-                        <span class="skill-item specialty-skill">大型資料分析專案<span
+                        <span class="skill-item specialty-skill">資料分析專案<span
                                 class="proficiency-indicator advanced"></span></span>
                         <span class="skill-item">商業洞察報告<span class="proficiency-indicator intermediate"></span></span>
                         <span class="skill-item">資料儀表板<span class="proficiency-indicator beginner"></span></span>
@@ -762,6 +794,7 @@
             </div>
         </div>
 
+
         <div class="summary-stats">
             <div class="stat-card">
                 <div class="stat-number">1</div>
@@ -781,7 +814,7 @@
             </div>
             <div class="stat-card python-stat">
                 <div class="stat-number">1</div>
-                <div class="stat-label">大型資料分析專案</div>
+                <div class="stat-label">資料分析專案</div>
             </div>
             <div class="stat-card android-stat">
                 <div class="stat-number">15+</div>
@@ -851,7 +884,7 @@
                         </div>
                         <div class="legend-item">
                             <span>📊</span>
-                            <span>Python 分析 - 1個大型專案</span>
+                            <span>Python 分析 - 1個專案</span>
                         </div>
                         <div class="legend-item">
                             <span>📱</span>
@@ -909,7 +942,7 @@
                 });
             }, observerOptions);
 
-            const skillSections = document.querySelectorAll('.skill-section, .legend, .stat-card, .highlight-box');
+            const skillSections = document.querySelectorAll('.skill-section, .legend, .stat-card, .highlight-box, .editable-section');
             skillSections.forEach((section, index) => {
                 section.style.opacity = '0';
                 section.style.transform = 'translateY(30px)';
